@@ -61,3 +61,8 @@ endif()
 if(CMAKE_BUILD_TYPE STREQUAL Release)
   add_compile_options(-Ofast)
 endif()
+
+include_directories(${CMAKE_SOURCE_DIR})
+
+add_executable(test_ct_hashmap test/ute_hashmap.test.cpp)
+target_include_directories(test_ct_hashmap PRIVATE ${CMAKE_SOURCE_DIR})
