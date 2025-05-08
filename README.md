@@ -1,5 +1,3 @@
-# ute_hashmap
-
 this is a header-only, compile-time hashmap implementation using c++23 features. it supports string and integral keys, and is designed to be used in constexpr contexts.
 
 ## features
